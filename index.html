@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <div class="para1">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+  </div>
+
+  <div class="container">
+    <h2 class="linkbox">Try it free 7 days then $20/mo. there after</h2>
+    <div class="form">
+      <form name="myform" onsubmit="return validate()">
+      <input type="text" name="first" placeholder="First Name" class="warningicon">
+      <p id="errorname">Name cannot be empty</p>
+      <br>
+      <input type="text" name="last" placeholder="Last Name" class="warningicon">
+      <p id="errorlastname">Last name cannot be empty</p><br>
+      <input type="Email" name="email" placeholder="Email Address" class="warningicon">
+      <p id="erroremail">Looks like this is not the email</p><br>
+      <input type="Password" name="password" placeholder="Password" class="warningicon">
+      <p id="errorpassword">Password cannot be empty</p><br>
+      <input type="submit" name="submit" value="CLAIM YOUR FREE TRIAL" class="button">
+      </form><br>
+      <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
